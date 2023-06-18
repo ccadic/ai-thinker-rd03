@@ -1,0 +1,113 @@
+
+(session "rd-03.ses"
+  (base_design "rd-03.dsn")
+  (placement
+    (resolution um 10)
+    (component MountingHole:MountingHole_3.2mm_M3
+      (place H2 1276350 -717550 front 0)
+      (place H1 1047750 -717550 front 0)
+    )
+    (component "rd-03:AI-S3"
+      (place U2 1020736 -1328369 front 0)
+    )
+    (component "rd-03:RD-03"
+      (place U1 1155700 -584200 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(6.0.11)")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /OT2
+        (wire
+          (path B.Cu 2500
+            1242422 -497008
+            1300661 -555247
+            1300661 -940825
+            1287317 -954169
+          )
+        )
+      )
+      (net /GPIO42
+        (wire
+          (path B.Cu 2500
+            1242422 -522408
+            1261650 -541636
+            1261650 -701691
+            1256605 -706736
+            1256605 -872657
+            1287317 -903369
+          )
+        )
+      )
+      (net /GPIO41
+        (wire
+          (path B.Cu 2500
+            1242422 -547808
+            1257146 -562532
+            1257146 -693457
+            1252101 -698502
+            1252101 -893553
+            1287317 -928769
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 2500
+            1256848 -1253900
+            1287317 -1284369
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1242422 -573208
+            1257355 -588141
+            1257355 -706488
+            1256848 -706995
+            1256848 -1253900
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1033317 -1309769
+            1200979 -1309769
+            1256848 -1253900
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1287336 -1309769
+            1287317 -1309750
+            1287317 -1284369
+          )
+        )
+      )
+      (net +3.3V
+        (wire
+          (path B.Cu 2500
+            1242422 -598608
+            1064661 -776369
+            1033317 -776369
+          )
+        )
+      )
+    )
+  )
+)
